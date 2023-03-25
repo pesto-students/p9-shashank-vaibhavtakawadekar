@@ -1,0 +1,149 @@
+/*#blue{
+    
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    
+    top: 300px;
+    left: 500px;
+    position: absolute; 
+    animation-name: blueAni;  
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+@keyframes blueAni{
+    to{
+        transform: rotateZ(90deg);
+        transform-origin: top left;
+    }
+    
+}
+#red{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    top: 300px;
+    left: 650px;
+    position: absolute;
+    animation-name: redAni;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+@keyframes redAni{
+    to{
+        transform: rotateZ(-90deg);
+        transform-origin: top right;
+    }
+}
+#yellow{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    top: 450px;
+    left: 500px;
+    position: absolute;
+    animation-name: yellowAni;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+@keyframes yellowAni{
+    to{
+        transform: rotateZ(-90deg);
+        transform-origin: bottom left;
+    }
+}
+#green{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    top: 450px;
+    left: 650px;
+    position: absolute;
+    animation-name: greenAni;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+@keyframes greenAni{
+    to{
+        transform: rotateZ(90deg);
+        transform-origin: bottom right;
+    }
+}
+#main{
+    width: 300px;
+    height: 300px;
+    background-color: greenyellow;
+    margin-top: 300px;
+    margin-left: 492px;
+}
+h1{
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#red:hover, #blue:hover, #green:hover,#yellow:hover{   
+    animation-name: greenAni;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}*/
+#one {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  transition: all 1s ease-in-out;
+  transition: transform 1s linear;
+  transform-style: preserve-3D;
+}
+#blue {
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  transform-origin: bottom left;
+}
+#red {
+  top: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: top left;
+}
+#yellow {
+  top: 0;
+  right: 0;
+  background-color: yellow;
+  transform-origin: top right;
+}
+#green {
+  bottom: 0;
+  right: 0;
+  background-color: green;
+  transform-origin: bottom right;
+}
+#main:hover #red,
+#main:hover #green {
+  transform: rotate(90deg);
+}
+#main:hover #yellow,
+#main:hover #blue {
+  transform: rotate(-90deg);
+}
