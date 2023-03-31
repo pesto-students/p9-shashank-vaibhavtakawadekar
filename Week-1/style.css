@@ -1,0 +1,83 @@
+:root{
+  --gray:#BEBCBC;
+  --icon_size:35px;
+  --row_color: #A8A8A8;
+  --title_background_color:#393838;
+  --bottom_bar_colour:#3465BA;
+}
+.music-board {
+  font-family: "Lato";
+}
+.music-board .leftbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100vh;
+  background-color: var(--gray);
+}
+i {
+  font-size: var(--icon_size);
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-top: 20px;
+}
+img {
+  margin-left: 100px;
+  height: 200px;
+  width: 200px;
+  margin-top: 30px;
+}
+.title1 {
+  margin-top: 60px;
+  margin-left: 20px;
+}
+h1{
+  font-size: 22px;
+}
+.info {
+  font-size: 12px;
+}
+table,
+th,
+tr {
+  font-size: 18px;
+}
+table{
+  width: 90%; 
+  margin-left: 100px;
+}
+.dark_row {
+  background-color:var(--row_color);
+}
+.upper {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--title_background_color);
+  margin-top: 0%;
+  width: 100vw;
+  height: 35vh;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100vw;
+  height: 150px;
+  background-color: var(--bottom_bar_colour);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.button {
+  flex-grow: 20;
+  margin-top: 40px;
+  margin-left: 100px;
+}
